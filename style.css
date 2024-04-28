@@ -1,0 +1,178 @@
+.logo{
+    width: 120px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    margin: 10px;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #dcdcdc;
+    height: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 85%;
+    backdrop-filter: blur(5px);
+}
+
+.header-text{
+    position: absolute;
+    top: 8px;
+    font-family: Varela Round,Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: #1c1a1c;
+    transition: 800ms;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.header-explore{
+    right: 25%;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.header-shop{
+    right: 5%;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.header-text:hover{
+    background-color: #fefafe;
+    color: rgb(36, 21, 40);
+    transition: 800ms;
+    rotate: 3deg;
+}
+
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(46,192,213,1) 6%, rgba(231,67,186,1) 46%, rgba(253,187,45,1) 100%);
+    height: 2000px;
+    overscroll-behavior: none;
+    width: 100%;
+    -webkit-overflow-scrolling: none;
+}
+
+
+.text{
+    font-weight: 500;
+    color: #1c1a1c;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+
+
+/* new toothpaste photos fading animation - START */
+
+.fadein img {
+    position:absolute;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 9s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f2 {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+
+}
+#f3 {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+
+}
+
+.chupachupsimgs{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.chupaimg{
+    
+    min-height: auto;
+    position: absolute;
+    transform: translateX(-50%);
+    
+}
+
+/* new toothpaste photos fading animation - END */
+
+
+.shop-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #383638;
+    border: 3px solid #383638;
+    border-radius: 20px;
+    width: 280px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s ease-in-out;
+}
+
+.shop-button:hover{
+    background-color: #383638;
+    color: #ffffff;
+    transition: 0.8s ease-in-out;
+}
+
+#textnshop{
+    position: absolute;
+    top: 540px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-page-new-text{
+    color: #fff5f5;
+    font-weight: 600;
+    font-family: monospace, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  black 4px 4px 6px;
+}
+
+#home-toothbrush-section{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 990px;
+}
