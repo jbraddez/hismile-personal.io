@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiSmile™ | Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <script src="script.js" ></script>
+</head>
+<body>
+
+
+
+    <div id="cardbox">
+        <div id="c1" style="background-color:rgb(180, 179, 179);" class="card">
+            <img src="./images/mauro-card.png" style="object-fit: contain;" >
+        </div>
+        <div id="c2" style="background-color:rgb(180, 179, 179);" class="card">
+          <img src="./images/oliveira-card.png" style="object-fit: contain;" >
+        </div>
+        <div id="c3" style="background-color: lightgrey;" class="card">
+            <img src="./images/sarah-card.png" style="object-fit: contain;" >
+        </div>
+        <div class="card" id="team-box" style="background-color: darkgrey;"><img src="./images/team-box.png"> </div>
+      </div>
+
+
+
+
+    <!-- HEADER FOR ALL PAGES BELOW -->
+    <div class="header">
+        <a href="index.html" title="Home!" >
+            <img src="./images/logo.webp" class="logo">
+        </a>
+        <div>
+        <a class="header-explore header-text" href="explore-page.html">
+            EXPLORE
+        </a>
+        <a class="header-text header-shop" href="shop-page.html">
+            SHOP
+        </a>
+        </div>
+
+    </div>
+    
+
+    <script>const box = document.getElementsByClassName("team-box");
+        const c2 = document.getElementById('c2');
+        const c3 = document.getElementById('c3');
+        const c1 = document.getElementById('c1');
+      const fps = 60;
+      
+      setInterval(function() {
+        if(getComputedStyle(document.getElementById('team-box')).getPropertyValue('--hovered') == 1) {
+          console.log(getComputedStyle(document.getElementById('team-box')).getPropertyValue('--hovered') == 1);
+          c2.style.rotate = '-5deg'
+          c2.style.transform = "translate(-558px,-46px)"
+          
+          c1.style.rotate = '5deg'
+          c1.style.transform = "translate(170px,-15px)"
+          
+          c3.style.top = "50px"
+          c1.style.opacity = 1
+          c2.style.opacity = 1
+          c3.style.opacity = 1
+        } else {
+          c2.style.rotate = '0deg'
+          c2.style.transform = ''
+          
+          c1.style.rotate = '0deg'
+          c1.style.transform = ''
+          
+          c3.style.top = ''
+
+          c1.style.opacity = 0
+          c2.style.opacity = 0
+          c3.style.opacity = 0
+          
+        };
+      }, 1000 / fps);
+      </script>
+</body>
+</html>
