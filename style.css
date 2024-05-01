@@ -176,3 +176,64 @@ body{
     transform: translateX(-50%);
     top: 990px;
 }
+
+
+
+
+
+/* ------------- EXPLORE PAGE BELOW ----------------- */
+
+
+
+#cardbox{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+  }
+  
+  .card{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%);
+    transition: 1.5s 300ms ease-in-out;
+   
+    
+  }
+  
+  
+  
+  
+  #c2{
+      position: absolute;
+      top: 60px;
+      transform: translateX(-50%);
+  }
+  
+  
+  #c3{
+      position: absolute;
+      top: 60px;
+      transform: translateX(-50%);
+  }
+  
+  
+    
+  
+  
+  
+  #team-box{
+    background-color: none;
+    --hovered: 0;
+    opacity: 100%;
+    transition: 1.2s 0.5s ease-in-out;
+  }
+  
+  #team-box:hover{
+    background-color: none;
+    --hovered: 1;
+    opacity: 0%;
+    transition: 0.8s ease-in-out;
+  }
